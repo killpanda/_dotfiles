@@ -80,11 +80,6 @@ alias v.lssitepackages='lssitepackages'
 
 # For axel
 alias axel="axel -n 20 -a -o ~/Downloads"
-alias downbook="axel -n 20 -a -o ~/Downloads/Books"
-
-# single task
-alias singleon="defaults write com.apple.dock single-app -bool true && killall Dock"
-alias singleoff="defaults write com.apple.dock single-app -bool false && killall Dock"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
@@ -94,6 +89,8 @@ export EDITOR='vim'
 #ssh
 
 export PATH=/usr/local/sbin:$PATH
+
+alias cleanpyc="echo Cleaning up all .pyc files...;find . -name \"*.pyc\" -exec rm -rf {} \\;"
 
 # ftq
 # export HTTP_PROXY='http://gateway.f.ftq.me:55598'
